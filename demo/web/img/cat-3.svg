@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8fbf7"/>
+      <stop offset="100%" stop-color="#b9e8de"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#g3)"/>
+  <g fill="none" stroke="#2f7f6f" stroke-width="5" stroke-linejoin="round">
+    <rect x="146" y="106" width="108" height="108" rx="10" fill="#f5fffd"/>
+    <rect x="176" y="136" width="48" height="48" rx="6" fill="#d7f2ec" stroke="#4f9f8f"/>
+    <g stroke="#2f7f6f" stroke-width="5" stroke-linecap="round">
+      <path d="M126 126 h-18 M126 150 h-18 M126 174 h-18 M126 198 h-18"/>
+      <path d="M274 126 h18 M274 150 h18 M274 174 h18 M274 198 h18"/>
+      <path d="M166 86 v-18 M200 86 v-18 M234 86 v-18"/>
+      <path d="M166 234 v18 M200 234 v18 M234 234 v18"/>
+    </g>
+  </g>
+  <text x="200" y="276" text-anchor="middle" font-family="Segoe UI, Microsoft YaHei, sans-serif"
+        font-size="18" fill="#3c8a7a">电子元件</text>
+</svg>

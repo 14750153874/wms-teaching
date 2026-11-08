@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fffaf0"/>
+      <stop offset="100%" stop-color="#f4e3c4"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#g2)"/>
+  <g stroke="#b98b4a" fill="#ffffff" stroke-width="5" stroke-linejoin="round">
+    <rect x="112" y="96" width="120" height="150" rx="8" transform="rotate(-8 172 171)"/>
+    <rect x="150" y="86" width="120" height="150" rx="8" transform="rotate(6 210 161)"/>
+    <path d="M176 128 h68 M176 152 h68 M176 176 h44" stroke="#d9b98c" stroke-width="6" stroke-linecap="round"/>
+    <path d="M286 178 l28 62" stroke="#8fb3a0" stroke-width="12" stroke-linecap="round"/>
+    <path d="M282 176 l10 -14 l16 8 z" fill="#8fb3a0" stroke="#8fb3a0"/>
+  </g>
+  <text x="200" y="276" text-anchor="middle" font-family="Segoe UI, Microsoft YaHei, sans-serif"
+        font-size="18" fill="#a9834e">办公用品</text>
+</svg>

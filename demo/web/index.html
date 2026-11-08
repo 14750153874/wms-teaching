@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>智能仓库管理系统（WMS）· 电商通用版演示</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<script src="config.js"></script>
+
+<!-- ============ 登录 ============ -->
+<div id="login-view">
+  <div class="login-card">
+    <h1>智能仓库管理系统</h1>
+    <p class="sub">WMS · 电商通用版（商城 + 履约 + 仓储 + 运维）</p>
+    <p class="mini-note">单文件演示：前端与接口同源 http://127.0.0.1:8000<br/>独立部署：前端 8001 / 后端 8000（见 README）</p>
+    <div class="field">
+      <label>用户名</label>
+      <input class="input" id="login-username" value="admin" autocomplete="username"/>
+    </div>
+    <div class="field">
+      <label>密码</label>
+      <input class="input" id="login-password" type="password" value="123456" autocomplete="current-password"/>
+    </div>
+    <button class="btn primary" style="width:100%;height:36px;margin-top:6px" id="login-btn">登 录</button>
+    <div class="tip">演示账号：<b>admin / 123456</b><br/>数据保存在本地 SQLite 文件，可随时重置</div>
+  </div>
+</div>
+
+<!-- ============ 主界面 ============ -->
+<div id="app-view" class="hidden">
+  <aside class="sidebar">
+    <div class="logo">WMS <span class="badge">演示</span></div>
+    <nav id="menu">
+      <div class="group">总览</div>
+      <a data-page="dashboard" data-perm="dashboard:view">经营看板</a>
+      <div class="group">用户层 · 商城</div>
+      <a data-page="shop" data-perm="shop:view">商城前台</a>
+      <a data-page="my-orders" data-perm="myorder:view">我的订单</a>
+      <div class="group">运营层 · 履约</div>
+      <a data-page="ec-orders" data-perm="ec:order:view">订单池</a>
+      <a data-page="waves" data-perm="ec:wave:view">波次拣货</a>
+      <a data-page="after-sales" data-perm="ec:aftersale:view">售后工作台</a>
+      <div class="group">运营层 · 商品</div>
+      <a data-page="goods" data-perm="goods:view">商品 SPU/SKU</a>
+      <a data-page="listings" data-perm="listing:view">商品上下架</a>
+      <a data-page="replenish" data-perm="replenish:view">补货建议</a>
+      <div class="group">仓储作业</div>
+      <a data-page="in-orders" data-perm="in:view">入库管理</a>
+      <a data-page="out-orders" data-perm="out:view">出库管理</a>
+      <div class="group">库存作业</div>
+      <a data-page="stocktake" data-perm="stocktake:view">库存盘点</a>
+      <a data-page="transfer" data-perm="transfer:view">库存调拨</a>
+      <a data-page="inventory" data-perm="inventory:view">库存查询</a>
+      <a data-page="txn" data-perm="txn:view">库存流水</a>
+      <a data-page="ledger" data-perm="ledger:view">库存台账</a>
+      <div class="group">报表</div>
+      <a data-page="reports" data-perm="report:view">报表中心</a>
+      <div class="group">基础资料</div>
+      <a data-page="locations" data-perm="location:view">仓库库位</a>
+      <div class="group">运维层</div>
+      <a data-page="ops" data-perm="ops:view">系统运维</a>
+      <a data-page="sys" data-perm="sys:view">系统管理</a>
+      <a data-page="logs" data-perm="log:view">操作日志</a>
+    </nav>
+    <div class="foot">订单驱动 · Python + SQLite</div>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <div class="crumb" id="crumb">经营看板</div>
+      <div class="spacer"></div>
+      <button class="btn small" id="btn-reset">重置演示数据</button>
+      <span class="user" id="current-user"></span>
+      <button class="btn small" id="btn-logout">退出</button>
+    </header>
+    <main class="content" id="content"></main>
+  </div>
+</div>
+
+<div id="toasts"></div>
+<div id="modal-root"></div>
+
+<script src="app.js"></script>
+<script src="ec.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eef4ff"/>
+      <stop offset="100%" stop-color="#c9dcf7"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#g1)"/>
+  <g stroke="#4c77b5" fill="none" stroke-width="6" stroke-linecap="round">
+    <circle cx="150" cy="140" r="46"/>
+    <circle cx="150" cy="140" r="22" fill="#f7fbff"/>
+    <path d="M150 82 v18 M150 180 v18 M92 140 h18 M190 140 h18"/>
+    <path d="M214 196 l58 58"/>
+    <path d="M232 178 l58 58" stroke="#8fb3e0"/>
+  </g>
+  <text x="200" y="272" text-anchor="middle" font-family="Segoe UI, Microsoft YaHei, sans-serif"
+        font-size="18" fill="#5b7fae">五金件</text>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="g0" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f3f6fb"/>
+      <stop offset="100%" stop-color="#d8e2f0"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#g0)"/>
+  <g stroke="#7c90ab" stroke-width="5" stroke-linejoin="round" fill="#ffffff">
+    <path d="M128 132 l72 -38 l72 38 v84 l-72 38 l-72 -38 z"/>
+    <path d="M128 132 l72 38 l72 -38" fill="#eef3fa"/>
+    <path d="M200 170 v84" fill="none"/>
+  </g>
+  <text x="200" y="262" text-anchor="middle" font-family="Segoe UI, Microsoft YaHei, sans-serif"
+        font-size="17" fill="#7c90ab">商品图片</text>
+</svg>

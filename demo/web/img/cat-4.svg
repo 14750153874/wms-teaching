@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="g4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fdf3e7"/>
+      <stop offset="100%" stop-color="#e7c9a3"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#g4)"/>
+  <g stroke="#9a6f3f" stroke-width="5" stroke-linejoin="round">
+    <path d="M120 128 l80 -42 l80 42 v92 l-80 42 l-80 -42 z" fill="#f6dfc2"/>
+    <path d="M120 128 l80 42 l80 -42" fill="none"/>
+    <path d="M200 170 v92" fill="none"/>
+    <path d="M160 108 l80 42" fill="none" stroke="#c69a68"/>
+    <path d="M240 108 l-40 22" fill="none" stroke="#c69a68"/>
+  </g>
+  <text x="200" y="278" text-anchor="middle" font-family="Segoe UI, Microsoft YaHei, sans-serif"
+        font-size="18" fill="#8a6236">包装耗材</text>
+</svg>
